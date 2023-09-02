@@ -1,0 +1,30 @@
+{
+  "name": "dice-betting-api",
+  "version": "1.0.0",
+  "description": "Simple dice betting API",
+  "main": "./dist/main.js",
+  "scripts": {
+    "start": "rm -rf ./dist && tsc && node ./dist/main.js",
+    "test": "test"
+  },
+  "author": "Ihor Klymenok",
+  "license": "ISC",
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.4",
+    "@types/lodash": "^4.14.197",
+    "@types/node": "^20.5.8",
+    "jest": "^29.6.4",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.9.3",
+    "graphql": "^16.8.0",
+    "lodash": "^4.17.21",
+    "sequelize": "^6.32.1",
+    "sqlite3": "^5.1.6"
+  }
+}

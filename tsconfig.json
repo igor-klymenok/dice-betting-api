@@ -7,7 +7,7 @@
     "moduleResolution": "Node16",
     "skipLibCheck": true,
     "strict": true,
-    "sourceMap": false
+    "sourceMap": true
   },
   "include": [
     "src/**/*.ts"

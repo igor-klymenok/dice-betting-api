@@ -1,5 +1,6 @@
 {
   "name": "dice-betting-api",
+  "type": "module",
   "version": "1.0.0",
   "description": "Simple dice betting API",
   "main": "./dist/main.js",

@@ -1,5 +1,5 @@
 import {DataTypes, Model} from "sequelize";
-import {connection} from "../connection.provider";
+import {connection} from "../connection.provider.js";
 
 export class UserModel extends Model {
     declare id: number;

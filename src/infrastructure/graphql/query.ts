@@ -4,9 +4,9 @@ import {
     getBetUseCase,
     getUserListUseCase,
     getUserUseCase
-} from "../../application";
-import {BetResponseDto} from "./dto/bet.response.dto";
-import {UserResponseDto} from "./dto/user.response.dto";
+} from "../../application/index.js";
+import {BetResponseDto} from "./dto/bet.response.dto.js";
+import {UserResponseDto} from "./dto/user.response.dto.js";
 
 export async function getUser(_: any, { id }: { id: number }) {
     const user = await getUserUseCase.execute(id);

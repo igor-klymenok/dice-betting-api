@@ -1,9 +1,9 @@
-import {readFileSync} from "fs";
-import * as path from "path";
+import {readFileSync} from "node:fs";
+import * as path from "node:path";
 import {ApolloServer} from "@apollo/server";
 import {startStandaloneServer} from "@apollo/server/standalone";
-import * as query from './query';
-import * as mutation from './mutation';
+import * as query from './query.js';
+import * as mutation from './mutation.js';
 
 const typeDefs = readFileSync(path.resolve('src/infrastructure/graphql/schema.graphql')).toString('utf-8');
 

@@ -1,6 +1,6 @@
-import {Bet} from "../domain/bet";
-import {IRepository} from "./interfaces/repository.interface";
-import {groupBy} from "lodash";
+import {Bet} from "../domain/bet.js";
+import {IRepository} from "./interfaces/repository.interface.js";
+import groupBy from "lodash/groupBy.js";
 
 export class GetBestUserBetUseCase {
     constructor(private betRepository: IRepository<Bet>) {

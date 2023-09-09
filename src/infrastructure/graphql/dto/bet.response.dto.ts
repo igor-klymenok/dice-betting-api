@@ -1,4 +1,4 @@
-import {Bet} from "../../../domain/bet";
+import {Bet} from "../../../domain/bet.js";
 
 export class BetResponseDto {
     static fromBet(bet: Bet) {

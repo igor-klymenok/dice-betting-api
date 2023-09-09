@@ -1,11 +1,11 @@
-import {CreateBetUseCase} from "./create-bet.use-case";
+import {CreateBetUseCase} from "./create-bet.use-case.js";
 
-import {betRepository, userRepository} from "../infrastructure/database";
-import {GetBestUserBetUseCase} from "./get-best-user-bet.use-case";
-import {GetBetUseCase} from "./get-bet.use-case";
-import {GetBetListUseCase} from "./get-bet-list.use-case";
-import {GetUserUseCase} from "./get-user.use-case";
-import {GetUserListUseCase} from "./get-user-list.use-case";
+import {betRepository, userRepository} from "../infrastructure/database/index.js";
+import {GetBestUserBetUseCase} from "./get-best-user-bet.use-case.js";
+import {GetBetUseCase} from "./get-bet.use-case.js";
+import {GetBetListUseCase} from "./get-bet-list.use-case.js";
+import {GetUserUseCase} from "./get-user.use-case.js";
+import {GetUserListUseCase} from "./get-user-list.use-case.js";
 
 export const createBetUseCase = new CreateBetUseCase(userRepository, betRepository)
 export const getBestUserBetUseCase = new GetBestUserBetUseCase(betRepository)

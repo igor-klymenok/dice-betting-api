@@ -1,6 +1,5 @@
 import {DataTypes, Model} from "sequelize";
-import {connection} from "../connection.provider";
-import {UserModel} from "../user/user.model";
+import {connection} from "../connection.provider.js";
 
 export class BetModel extends Model {
     declare id: number;

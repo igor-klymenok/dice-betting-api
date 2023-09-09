@@ -1,7 +1,7 @@
-import {IRepository} from "./interfaces/repository.interface";
-import {User} from "../domain/user";
-import {Bet} from "../domain/bet";
-import {Dice} from "../domain/dice";
+import {IRepository} from "./interfaces/repository.interface.js";
+import {User} from "../domain/user.js";
+import {Bet} from "../domain/bet.js";
+import {Dice} from "../domain/dice.js";
 
 export class CreateBetUseCase {
     constructor(private userRepository: IRepository<User>, private betRepository: IRepository<Bet>) {

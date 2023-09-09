@@ -1,6 +1,6 @@
-import {BetModel} from "./bet.model";
-import {Bet} from "../../../domain/bet";
-import {IRepository} from "../../../application/interfaces/repository.interface";
+import {BetModel} from "./bet.model.js";
+import {Bet} from "../../../domain/bet.js";
+import {IRepository} from "../../../application/interfaces/repository.interface.js";
 
 export class BetRepository implements IRepository<Bet> {
     async createOne(entity: Bet): Promise<Bet> {

@@ -1,5 +1,5 @@
-import {Dice} from "./dice";
-import {Bet} from "./bet";
+import {Dice} from "./dice.js";
+import {Bet} from "./bet.js";
 
 describe('Bet', () => {
     it('should win bet', () => {

@@ -1,5 +1,5 @@
-import {User} from "../domain/user";
-import {IRepository} from "./interfaces/repository.interface";
+import {User} from "../domain/user.js";
+import {IRepository} from "./interfaces/repository.interface.js";
 
 export class GetUserUseCase {
     constructor(private userRepository: IRepository<User>) {

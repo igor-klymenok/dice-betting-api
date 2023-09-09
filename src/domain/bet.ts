@@ -1,4 +1,4 @@
-import {Dice} from "./dice";
+import {Dice} from "./dice.js";
 
 interface BetObject {
     id: number;

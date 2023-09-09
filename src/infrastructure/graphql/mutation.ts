@@ -1,5 +1,5 @@
-import {createBetUseCase} from "../../application";
-import {BetResponseDto} from "./dto/bet.response.dto";
+import {createBetUseCase} from "../../application/index.js";
+import {BetResponseDto} from "./dto/bet.response.dto.js";
 
 export async function createBet(_: any, {betAmount, chance, userId}: {
     userId: number,

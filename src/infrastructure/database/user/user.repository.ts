@@ -1,6 +1,6 @@
-import {IRepository} from "../../../application/interfaces/repository.interface";
-import {User} from "../../../domain/user";
-import {UserModel} from "./user.model";
+import {IRepository} from "../../../application/interfaces/repository.interface.js";
+import {User} from "../../../domain/user.js";
+import {UserModel} from "./user.model.js";
 
 export class UserRepository implements IRepository<User> {
     async createOne(entity: User): Promise<User> {
